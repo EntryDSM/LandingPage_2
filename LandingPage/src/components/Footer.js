@@ -3,6 +3,7 @@ import style from 'styled-components'
 import { Entry, DSM } from '../img/Footer'
 
 const Background = style.div `
+    margin-top: 276px;
     background-color: #F3F8FC;
     width: 100%;
     height: 100px;
