@@ -78,7 +78,7 @@ const Center = style.div `
 `;
 const AboutEntry = () => {
     return (
-        <div>
+        <div style={{marginTop: '110px'}}>
             <div>
                 <About>ABOUT</About>
                 <Explain>약 5년 간 서비스를 제공해온 노하우를 바탕으로</Explain>
