@@ -1,10 +1,17 @@
-import styled from 'styled-components';
-import React, {} from 'react';
+import styled, {keyframes} from 'styled-components';
+import React, { useState } from 'react';
 import { entryAdmin, entryMain, entryQna } from '../img'
 
+const FadeIn = keyframes`
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}`;
+
 const Div = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
-    
     a {
         text-decoration: none;
     }
@@ -15,7 +22,7 @@ const Div = styled.div`
         box-sizing: border-box;
     }
     
-    #portfolio *{
+    #portfolio * {
         z-index: 2;
     }
 
@@ -74,18 +81,29 @@ const Div = styled.div`
     .portfolio-item {
         padding: 0 1em;
     }
-
+    
     .portfolio-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: white;
-        transition: 0.3s;
+        
     }
 
     .link-plus {
         position: absolute;
-        width: 100%;
         display: flex;
         justify-content: center;
-        margin: 26.1% 0;
+        align-items: center;
+        width: 100%;
+        transition: 1s;
+        top: 90px;
+    }
+
+    .img-plus {
+        display: flex;
+        width: 45px;
+        animation: ${FadeIn} 1s;
     }
     
     .fas {
@@ -94,10 +112,6 @@ const Div = styled.div`
         color: #79C2E3;
     }
 
-    .portfolio-link:hover {
-        opacity: 0.2;
-        transition: 0.3s;
-    }
 
     #portfolio .portfolio-item .portfolio-link {
         position: relative;
@@ -114,6 +128,14 @@ const Div = styled.div`
 
     .img-fluid {
         width: 100%;
+        
+        // transition: 0.5s;   
+        
+    }
+
+    .img-fluid:hover {
+        opacity: 0.4;
+        transition: 0.3s;
     }
 
     .portfolio-caption {
@@ -127,11 +149,26 @@ const Div = styled.div`
 `;
 // background: #F7F9FA;
 // #3DFFEB (메인 컬러)
-const Portfolio = () => {
-    
 
+const Portfolio = ({ setClickedNumber }) => {
+    const [hoverNumber, setHoverNumber] = useState(0)
+
+
+    const onMouseOver = (e)  => {
+        // console.log(e.target)
+        setHoverNumber(Number(e.currentTarget.dataset.id))
+        // parseInt()
+    }
+    const onMouseLeave = () => {
+        setHoverNumber(0)
+    }
+
+    const onClick = (e) => {
+        console.log(11)
+        setClickedNumber(Number(e.currentTarget.dataset.id))
+    }
     return (
-        <Div id="page-portfolio">
+        <Div id="page-main" hoverNumber={hoverNumber}>
             <section id="portfolio" className="bg">
                 <div className="container">
                     <div className="row">
@@ -144,11 +181,13 @@ const Portfolio = () => {
                     </div>
                     <div className="row">
                         <div className="portfolio-item">
-                            <div className="portfolio-link">
-                                <div className="link-plus">
-                                    <i className="fas fa-plus"></i>
+                            <div className="portfolio-link" data-id="1" onClick={onClick} onMouseOver={onMouseOver} onMouseLeave={onMouseLeave}>
+                                {hoverNumber === 1 && <div className="link-plus">
+                                    {/* <i className="fas fa-plus"></i> */}
+                                    <img className="img-plus" src={require('../img/plus.svg')} alt='plus' />
                                 </div>
-                                <img className="img-fluid" src={ entryMain } alt='main'></img>
+                                } 
+                                <img className="img-fluid" src={entryMain} alt='fluid'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>입학전형시스템</h4>
@@ -158,11 +197,13 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="portfolio-item">
-                            <div className="portfolio-link">
-                                <div className="link-plus">
-                                    <i className="fas fa-plus"></i>
+                            <div className="portfolio-link" data-id="2" onClick={onClick} onMouseOver={onMouseOver} onMouseLeave={onMouseLeave}>
+                                {hoverNumber === 2 && <div className="link-plus">
+                                    {/* <i className="fas fa-plus"></i> */}
+                                    <img className="img-plus" src={require('../img/plus.svg')} alt='entry'/>
                                 </div>
-                                <img className="img-fluid" src={entryAdmin} alt='admin'></img>
+                                }
+                                <img className="img-fluid" src={entryAdmin} alt='entry'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>입학전형시스템</h4>
@@ -172,11 +213,13 @@ const Portfolio = () => {
                             </div>
                         </div>
                         <div className="portfolio-item">
-                            <div className="portfolio-link">
-                                <div className="link-plus">
-                                    <i className="fas fa-plus"></i>
+                            <div className="portfolio-link" data-id="3"onClick={onClick} onMouseOver={onMouseOver} onMouseLeave={onMouseLeave}>
+                                {hoverNumber === 3 && <div className="link-plus">
+                                    {/* <i className="fas fa-plus"></i> */}
+                                    <img className="img-plus" src={require('../img/plus.svg')} alt='entry'/>
                                 </div>
-                                <img className="img-fluid" src={entryQna} alt='qna'></img>
+                                }
+                                <img className="img-fluid" src={entryQna} alt='entry'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>실시간 메신저</h4>
@@ -188,6 +231,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </section>
+            
         </Div>
     );
 }

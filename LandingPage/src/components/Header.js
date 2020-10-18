@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { headlogo } from '../img';
 
 const Div = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); */
-
     a {
         text-decoration: none;
     }
@@ -81,7 +79,6 @@ const Div = styled.div`
         color: black;
         font-family: 'BBTreeG_R';
         transition: .6s;
-        scroll-behavior: smooth
     }
 
     .nav-link:hover {
@@ -97,17 +94,17 @@ const Header = () => {
            if (window.scrollY > 200) {
                setHeight(30);
            } else {
-               setHeight(70);
+               setHeight(70)
            }
         })
     }, [])
     return (
-        <Div id="page-top" height={ height }>
+        <Div id="page-top" height={height}>
             <nav className="navbar" id="mainNav">
                 <div className="container">
                     <div className="nav-logo">
                         <a className="navbar-logo" href="#page-top">
-                            <img src={ headlogo } alt='headlogo' />
+                            <img src={headlogo} alt='entry' />
                         </a>
                     </div>
                     <div className="navbar-collapse">

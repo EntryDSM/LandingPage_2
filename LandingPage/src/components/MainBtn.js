@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { background, EntryLogo } from '../img'
 
 const Div = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
-
     a {
         text-decoration: none;
     }
@@ -101,7 +99,7 @@ const MainBtn = () => {
                             <span className="intro-schoolName">대덕소프트웨어마이스터고등학교</span>
                         </div>
                         <div className="intro-heading-in">
-                            <span className="intro-circleName">입학전형 시스템<img src={ EntryLogo } alt='logo'></img>입니다</span>
+                            <span className="intro-circleName">입학전형 시스템<img src={EntryLogo} alt='logo'></img>입니다</span>
                         </div>
                         <a className="btn" role="button" href="https://apply.entrydsm.hs.kr/">원서 접수하기</a>
                     </div>
