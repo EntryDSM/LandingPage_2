@@ -3,16 +3,16 @@ import style from 'styled-components'
 import { img2016, img2017, img2018, img2019, img2020 } from '../img'
 
 const About = style.div `
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
-    font-family: 'NanumGothic', sans-serif;
+    font-family: 'Nanum Gothic',sans-serif;
     line-height: 75px;
     letter-spacing: 10px;
     text-align: center;
 `;
 const Explain = style.div `
-    font-size: 20px;
-    font-family: 'NanumGothic', sans-serif;
+    font-size: 18px;
+    font-family: 'Nanum Gothic',sans-serif;
     line-height: 35px;
     text-align: center;
 `;
@@ -23,7 +23,7 @@ const Background = style.div `
     background-color: #ECF3FB;
     font-family: 'NanumGothic', sans-serif;
     width: 100%;
-    min-height: 1713px;
+    height: 1713px;
 `;
 const Year = style.div `
     font-size: 26px;
@@ -39,7 +39,6 @@ const Contents = style.div `
     font-family: 'NanumGothic', sans-serif;
     line-height: 27px;
     width: 330px;
-    width: 230px;
 `;
 const Img = style.div `
     width: 181px;
@@ -50,7 +49,7 @@ const Img = style.div `
     margin: 0 75px;
     & > img {
         border-radius: 50%;
-        margin: 8px
+        margin: 7px
     }
 `;
 const Flex = style.div `

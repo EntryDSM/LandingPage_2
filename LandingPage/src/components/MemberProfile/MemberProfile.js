@@ -4,17 +4,17 @@ import Profiles from './Profiles'
 import { KJW, KJH, LWC, LYS, SWJ, Male, Female, JWY, KHG } from '../../img'
 
 const Team = style.div `
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
-    font-family: 'NanumGothic', sans-serif;
+    font-family: 'Nanum Gothic',sans-serif;
     line-height: 75px;
     letter-spacing: 10px;
     text-align: center;
     margin-top: 105px;
 `;
 const Explain = style.div `
-    font-size: 20px;
-    font-family: 'NanumGothic', sans-serif;
+    font-size: 18px;
+    font-family: 'Nanum Gothic',sans-serif;
     line-height: 35px;
     text-align: center;
     margin-top: 20px;
