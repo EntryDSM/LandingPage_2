@@ -2,7 +2,7 @@ import React, {} from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
 
     a {
         text-decoration: none;

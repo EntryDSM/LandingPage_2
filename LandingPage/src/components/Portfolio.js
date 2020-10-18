@@ -3,7 +3,7 @@ import React, {} from 'react';
 import { entryAdmin, entryMain, entryQna } from '../img'
 
 const Div = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
     
     a {
         text-decoration: none;
@@ -15,7 +15,7 @@ const Div = styled.div`
         box-sizing: border-box;
     }
     
-    #portfolio * {
+    #portfolio *{
         z-index: 2;
     }
 

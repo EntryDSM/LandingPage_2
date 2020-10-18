@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { headlogo } from '../img';
 
 const Div = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); */
 
     a {
         text-decoration: none;
@@ -81,6 +81,7 @@ const Div = styled.div`
         color: black;
         font-family: 'BBTreeG_R';
         transition: .6s;
+        scroll-behavior: smooth
     }
 
     .nav-link:hover {

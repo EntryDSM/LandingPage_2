@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { background, EntryLogo } from '../img'
 
 const Div = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
 
     a {
         text-decoration: none;
