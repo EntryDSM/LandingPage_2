@@ -11,7 +11,7 @@ const Img = style.div`
     border-radius: 105px;
     & > img {
         border-radius: 50%;
-        margin: 8px;
+        margin: 7px;
         position: absolute;
         top: 0;
         left: 0;
