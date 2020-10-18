@@ -1,1 +1,1 @@
-export { default as headlogo } from './entry-headlogo.png'
+export { default as headlogo } from './entry-headlogo.svg'
