@@ -18,7 +18,11 @@ const Img = style.div `
         + div {
             opacity: 1;
         }
+        + div:hover {
+            opacity: 1;
+        }
     }
+
 `;
 const Grade = style(Img) `
     border: ${props => props.grade === 'first' ? '1px solid #0015D5' : props.grade === 'second' ? '1px solid #707070' : '1px solid #FFEE00'};
