@@ -1,7 +1,7 @@
 import React from 'react'
 import style from 'styled-components'
 import Profiles from './Profiles'
-import { KJW, KJH, LWC, LYS, SWJ, Male, Female, JWY } from '../../img/Member'
+import { KJW, KJH, LWC, LYS, SWJ, Male, Female, JWY, KHG } from '../../img/Member'
 
 const Team = style.div `
     font-size: 65px;
@@ -57,7 +57,7 @@ const MemberProfile = () => {
                     <Profiles
                         name = "김해건"
                         grade = "third"
-                        img = { Male }
+                        img = { KHG }
                         fb = 'UX/UI DESIGNER'
                         github = ''
                     />
