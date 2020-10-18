@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="39.5" viewBox="0 0 124 39.5">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        font-size: 27px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-2 {
+        fill: #3dffeb;
+      }
+    </style>
+  </defs>
+  <g id="그룹_45" data-name="그룹 45" transform="translate(116 -360.5)">
+    <text id="EntryDSM" class="cls-1" transform="translate(-115 390.5)"><tspan x="0" y="0">EntryDSM</tspan></text>
+    <rect id="사각형_49" data-name="사각형 49" class="cls-2" width="123" height="4" rx="2" transform="translate(-115 396)"/>
+  </g>
+</svg>
