@@ -168,7 +168,7 @@ const Portfolio = ({ setClickedNumber }) => {
         setClickedNumber(Number(e.currentTarget.dataset.id))
     }
     return (
-        <Div id="page-main" hoverNumber={hoverNumber}>
+        <Div id="page-portfolio" hoverNumber={hoverNumber}>
             <section id="portfolio" className="bg">
                 <div className="container">
                     <div className="row">
