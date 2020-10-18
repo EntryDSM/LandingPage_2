@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import React, {} from 'react';
-import entryMain from '../img/entry-main.png';
-import entryAdmin from '../img/entry-admin.png';
-import entryQna from '../img/entry-qna.png';
+import { entryAdmin, entryMain, entryQna } from '../img'
 
 const Div = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');

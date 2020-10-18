@@ -1,7 +1,7 @@
 import React from 'react'
 import style from 'styled-components'
 import Profiles from './Profiles'
-import { KJW, KJH, LWC, LYS, SWJ, Male, Female, JWY, KHG } from '../../img/Member'
+import { KJW, KJH, LWC, LYS, SWJ, Male, Female, JWY, KHG } from '../../img'
 
 const Team = style.div `
     font-size: 65px;

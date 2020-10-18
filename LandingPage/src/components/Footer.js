@@ -1,6 +1,6 @@
 import React from 'react'
 import style from 'styled-components'
-import { Entry, DSM } from '../img/Footer'
+import { Entry, DSM } from '../img'
 
 const Background = style.div `
     margin-top: 276px;
