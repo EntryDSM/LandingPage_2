@@ -148,7 +148,7 @@ const Portfolio = () => {
                                 <div className="link-plus">
                                     <i className="fas fa-plus"></i>
                                 </div>
-                                <img className="img-fluid" src={entryMain}></img>
+                                <img className="img-fluid" src={ entryMain } alt='main'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>입학전형시스템</h4>
@@ -162,7 +162,7 @@ const Portfolio = () => {
                                 <div className="link-plus">
                                     <i className="fas fa-plus"></i>
                                 </div>
-                                <img className="img-fluid" src={entryAdmin}></img>
+                                <img className="img-fluid" src={entryAdmin} alt='admin'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>입학전형시스템</h4>
@@ -176,7 +176,7 @@ const Portfolio = () => {
                                 <div className="link-plus">
                                     <i className="fas fa-plus"></i>
                                 </div>
-                                <img className="img-fluid" src={entryQna}></img>
+                                <img className="img-fluid" src={entryQna} alt='qna'></img>
                             </div>
                             <div className="portfolio-caption">
                                 <h4>실시간 메신저</h4>
