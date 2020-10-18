@@ -1,5 +1,6 @@
-import React, {} from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { headlogo } from '../img';
 
 const Div = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
@@ -20,7 +21,7 @@ const Div = styled.div`
         height: 100%;
     }
 
-    > .navbar {
+    .navbar {
         padding: 1rem 1rem;
         position: fixed;
         background: white;
@@ -31,12 +32,12 @@ const Div = styled.div`
     
     .container {
         display: felx;
-        height: 70px;
+        height: ${(props) => props.height && props.height}px;
+        transition: .5s;
     }
 
     .nav-logo {
-        display: grid;
-        padding: 18px 0;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 30%;
@@ -77,9 +78,9 @@ const Div = styled.div`
     }
 
     .nav-link {
-
         color: black;
         font-family: 'BBTreeG_R';
+        transition: .6s;
     }
 
     .nav-link:hover {
@@ -89,40 +90,49 @@ const Div = styled.div`
 `;
 // #3DFFEB (메인 컬러)
 const Header = () => {
+    const [height, setHeight] = useState(70)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+           if (window.scrollY > 200) {
+               setHeight(30);
+           } else {
+               setHeight(70);
+           }
+        })
+    }, [])
     return (
-        <Div id="page-top">
+        <Div id="page-top" height={ height }>
             <nav className="navbar" id="mainNav">
                 <div className="container">
                     <div className="nav-logo">
-                        <a className="navbar-logo" href="#page-top" style={{fontWeight:700}}>
-                        EntryDSM
+                        <a className="navbar-logo" href="#page-top">
+                            <img src={ headlogo } alt='headlogo' />
                         </a>
-                        <div className="navbar-logo-underline" />
                     </div>
                     <div className="navbar-collapse">
                         <ul className="nav">
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="">
+                                <a className="nav-link js-scroll-trigger" href="#page-main">
                                     WHAT IS ENTRYDSM
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="">
+                                <a className="nav-link js-scroll-trigger" href="#page-portfolio">
                                     PORTFOLIO
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="">
+                                <a className="nav-link js-scroll-trigger" href="#page-about">
                                     ABOUT
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="">
+                                <a className="nav-link js-scroll-trigger" href="#page-team">
                                     TEAM
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="">
+                                <a className="nav-link js-scroll-trigger" href="#page-qna">
                                     MEMBER Q&A
                                 </a>
                             </li>
