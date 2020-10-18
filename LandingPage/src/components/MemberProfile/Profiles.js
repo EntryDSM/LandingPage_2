@@ -59,7 +59,7 @@ const Profiles = props => {
     return (
         <div>
             <Profile>
-                <Grade props={ grade }>
+                <Grade grade={ grade }>
                     <img src={ img }
                         width='194'
                         height='194'
@@ -68,7 +68,7 @@ const Profiles = props => {
                     <div>        
                         <FB>{ fb }</FB>
                         <Github>
-                            <a href={ github } target='_blank' style={{textDecoration: 'none', color: 'black'}}>Github</a>
+                            <a href={ github } target='_blank' rel='noopener noreferrer' style={{textDecoration: 'none', color: 'black'}}>Github</a>
                         </Github>
                     </div>
                 </Grade>
