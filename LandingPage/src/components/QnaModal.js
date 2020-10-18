@@ -188,7 +188,7 @@ const QnaModal = ({ setClickedNumber }) => {
                                         <div className="modal-body">
                                             <h2 className="text-uppercase">실시간 메신저</h2>
                                             <p>학생-관리자 간 실시간 메신저 개발</p>
-                                            <img className="img-fluid" src={entryQna} />
+                                            <img className="img-fluid" src={entryQna} alt='entry' />
                                             <p className="modal-text">지원자와 관리자가 실시간으로 소통할 수 있는 메신저 플러그인입니다.</p>
                                             <ul className="list-unstyled">
                                                 <li>

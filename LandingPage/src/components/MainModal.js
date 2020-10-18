@@ -188,7 +188,7 @@ const MainModal = ({ setClickedNumber }) => {
                                         <div className="modal-body">
                                             <h2 className="text-uppercase">입학전형시스템</h2>
                                             <p>학생용 원서제출 페이지 개발</p>
-                                            <img className="img-fluid" src={entryMain} />
+                                            <img className="img-fluid" src={entryMain} alt='entry'/>
                                             <p className="modal-text">원서제출을 위한 개인정보 기입하고 자동으로 성적을 산출하여 원서를 발급 • 출력할 수 있는 메인 페이지입니다.</p>
                                             <ul className="list-unstyled">
                                                 <li>

@@ -188,7 +188,7 @@ const AdminModal = ({ setClickedNumber }) => {
                                         <div className="modal-body">
                                             <h2 className="text-uppercase">입학전형시스템</h2>
                                             <p>전형 관리자 페이지 개발</p>
-                                            <img className="img-fluid" src={entryAdmin} />
+                                            <img className="img-fluid" src={entryAdmin} alt='entry'/>
                                             <p className="modal-text">지원자들의 원서 제출 현황을 관리하고, 쾌적한 시스템 운영을 제공하는 관리자 대시보드입니다.</p>
                                             <ul className="list-unstyled">
                                                 <li>
