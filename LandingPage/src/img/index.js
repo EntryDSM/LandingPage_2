@@ -1,5 +1,6 @@
-export { img2016, img2017, img2018, img2019, img2020 } from './About'
-export { Male, Female, KJH, KJW, LWC, LYS, SWJ, JWY, KHG } from './Member'
+export { headlogo } from './Header'
 export { EntryLogo, background } from './MainBtn'
 export { entryAdmin, entryMain, entryQna } from './Portfolio'
+export { img2016, img2017, img2018, img2019, img2020 } from './About'
+export { Male, Female, KJH, KJW, LWC, LYS, SWJ, JWY, KHG } from './Member'
 export { DSM, Entry } from './Footer'

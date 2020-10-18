@@ -1,0 +1,1 @@
+export { default as headlogo } from './entry-headlogo.png'
