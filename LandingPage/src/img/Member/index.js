@@ -1,10 +1,9 @@
-export {
-    Male,
-    Female,
-    KJH,
-    KJW,
-    LWC,
-    LYS,
-    SWJ,
-    JWY
-} from '../index'
+export { default as KJH } from './kjh.jpg'
+export { default as LYS } from './lys.jpg'
+export { default as KJW } from './kjw.png'
+export { default as SWJ } from './swj.jpg'
+export { default as LWC } from './lwc.jpg'
+export { default as JWY } from './JWY.jpg'
+export { default as KHG } from './KHG.jpg'
+export { default as Female } from './Female.png'
+export { default as Male } from './Male.png'

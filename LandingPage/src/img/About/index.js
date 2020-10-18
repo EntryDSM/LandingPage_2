@@ -1,7 +1,5 @@
-export {
-    img2016,
-    img2017,
-    img2018,
-    img2019,
-    img2020
-} from '../index'
+export { default as img2016 } from './2016.jpg'
+export { default as img2017 } from './2017.jpg'
+export { default as img2018 } from './2018.jpg'
+export { default as img2019 } from './2019.jpg'
+export { default as img2020 } from './2020.jpg'
