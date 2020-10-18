@@ -38,8 +38,8 @@ const Contents = style.div `
     font-size: 16px;
     font-family: 'NanumGothic', sans-serif;
     line-height: 27px;
-    max-width: 330px;
-    min-width: 230px;
+    width: 330px;
+    width: 230px;
 `;
 const Img = style.div `
     width: 181px;
@@ -57,7 +57,7 @@ const Flex = style.div `
     display: flex;
     margin-bottom: 62px;
     margin-top: 56px;
-    max-width: 900px;
+    width: 900px;
     margin-left: 40px;
 `;
 const FirstImg = style(Flex) `
@@ -72,7 +72,7 @@ const Next = style.div `
     font-size: 20px;
 `;
 const Center = style.div `
-    max-width: 1080px;
+    width: 1080px;
     height: 1713px;
     margin: 0 auto;
 `;
