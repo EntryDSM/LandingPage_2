@@ -10,7 +10,7 @@ const Team = style.div `
     line-height: 75px;
     letter-spacing: 10px;
     text-align: center;
-    margin-top: 105px;
+    padding-top: 105px;
 `;
 const Explain = style.div `
     font-size: 18px;
@@ -20,10 +20,11 @@ const Explain = style.div `
     margin-top: 20px;
 `;
 const Allprofiles = style.div `
-    max-width: 1070px;
-    min-height: 1120px;
+    width: 1070px;
+    height: 1120px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 100px;
 `;
 const Line = style.div `
     max-width: 1068px;

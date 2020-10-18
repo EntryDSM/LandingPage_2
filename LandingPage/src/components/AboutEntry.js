@@ -9,6 +9,7 @@ const About = style.div `
     line-height: 75px;
     letter-spacing: 10px;
     text-align: center;
+    padding-top: 110px;
 `;
 const Explain = style.div `
     font-size: 18px;
@@ -77,7 +78,7 @@ const Center = style.div `
 `;
 const AboutEntry = () => {
     return (
-        <div style={{marginTop: '110px'}} id='page-about'>
+        <div id='page-about'>
             <div>
                 <About>ABOUT</About>
                 <Explain>약 5년 간 서비스를 제공해온 노하우를 바탕으로</Explain>

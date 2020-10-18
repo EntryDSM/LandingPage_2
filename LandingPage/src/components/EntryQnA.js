@@ -28,11 +28,10 @@ const QnA = style.div `
     line-height: 75px;
     letter-spacing: 10px;
     text-align: center;
-    margin-top: 210px;
-    margin-bottom: 130px;
+    padding-top: 110px;
+    margin-bottom: 150px;
 `;
 const Answer = style.div `
-
     width: 1050px;
     height: 523px;
     margin: 0 auto;
