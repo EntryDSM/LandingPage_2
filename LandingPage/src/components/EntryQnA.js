@@ -62,7 +62,7 @@ const Flex = style.div `
 const EntryQnA = () => {
 
     return (
-        <div>
+        <div id='page-qna'>
             <QnA>
                 MEMBER Q&A
             </QnA>
