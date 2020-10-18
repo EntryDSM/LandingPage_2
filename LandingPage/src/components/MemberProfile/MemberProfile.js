@@ -33,7 +33,7 @@ const Line = style.div `
 `;
 const MemberProfile = () => {
     return(
-        <div>
+        <div id='page-team'>
             <Team>TEAM ENTRY</Team>
             <Explain>
                 EntryDSM의 발전과 새로운 이야기를 만드는 사람들 입니다.
