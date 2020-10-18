@@ -17,8 +17,11 @@ function App() {
   return (
     <>
       {
-        clickedNumber === 1 && <MainModal setClickedNumber={setClickedNumber} /> ||
+       // eslint-disable-next-line no-mixed-operators
+       ( clickedNumber === 1 && <MainModal setClickedNumber={setClickedNumber} /> )||
+        // eslint-disable-next-line no-mixed-operators
         clickedNumber === 2 && <AdminModal setClickedNumber={setClickedNumber} /> ||
+        // eslint-disable-next-line no-mixed-operators
         clickedNumber === 3 && <QnaModal setClickedNumber={setClickedNumber} />
       }
     {
