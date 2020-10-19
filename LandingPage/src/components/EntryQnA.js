@@ -12,6 +12,7 @@ const Question = style.div `
     padding-left: 60px;
     margin: 0 auto;
     margin-top: 70px;
+    cursor: default;
 `;
 const More = style.p `
     font-size: 25px;
@@ -83,11 +84,11 @@ const EntryQnA = () => {
                 MEMBER Q&A
             </QnA>
             <div>
-                <Question >
+                <Question isOpen={isFirstOpened} data-id="1" onClick={ handleClick }>
                     <p style={{marginTop: '30px'}}>
                         <b>Q1.</b> 엔트리 개발을 하게 된 계기는 무엇인가요?
                     </p>
-                    <More isOpen={isFirstOpened} data-id="1" onClick={ handleClick }>▼</More>
+                    <More isOpen={isFirstOpened}>▼</More>
                 </Question>
                 {   isFirstOpened && 
                     <Answer className='answer'>
@@ -119,11 +120,11 @@ const EntryQnA = () => {
                 }
             </div>
             <div>
-                <Question>
+                <Question isOpen={isSecondOpened} data-id="2" onClick={ handleClick }>
                     <p style={{marginTop: '30px'}}>
                         <b>Q2.</b> 내가 만들었지만 이건 진짜 크~~ 감탄사 나오는 기능이 있나요?
                     </p>
-                    <More isOpen={isSecondOpened} data-id="2" onClick={ handleClick }>▼</More>
+                    <More isOpen={isSecondOpened}>▼</More>
                 </Question>
                 {   isSecondOpened &&
                     <Answer>
@@ -147,11 +148,11 @@ const EntryQnA = () => {
                 }
             </div>
             <div>
-                <Question>
+                <Question isOpen={isThirdOpened} data-id="3" onClick={ handleClick }>
                     <p style={{marginTop: '30px'}}>
                         <b>Q3.</b> 분야를 백엔드/프론트엔드로 결정하게 된 계기가 있나요?
                     </p>
-                    <More isOpen={isThirdOpened} data-id="3" onClick={ handleClick }>▼</More>
+                    <More isOpen={isThirdOpened}>▼</More>
                 </Question>
                 {   isThirdOpened &&
                     <Answer>
@@ -183,11 +184,11 @@ const EntryQnA = () => {
                 }
             </div>
             <div>
-                <Question>
+                <Question isOpen={isFourthOpened} data-id="4" onClick={ handleClick }>
                     <p style={{marginTop: '30px'}}>
                         <b>Q4.</b> 개발을 하면서 힘든 점이 있다면?
                     </p>
-                    <More isOpen={isFourthOpened} data-id="4" onClick={ handleClick }>▼</More>
+                    <More isOpen={isFourthOpened}>▼</More>
                 </Question>
                 {   isFourthOpened &&
                     <Answer>
