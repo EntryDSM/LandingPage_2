@@ -29,30 +29,30 @@ const QnA = style.div `
     letter-spacing: 10px;
     text-align: center;
     padding-top: 110px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 `;
 const Answer = style.div `
     width: 1050px;
-    height: 523px;
+    height: 450px;
     margin: 0 auto;
     margin-top: 47px;
     margin-bottom: 69px;
     border: 1px solid #707070;
     padding: 53px 43px;
     & > div {
-        font-size: 28px;
+        font-size: 26px;
         font-family: 'NanumGothic', sans-serif;
         font-weight: bold;
     }
     & > div > p {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 300;
         font-family: 'NanumGothic', sans-serif;
         margin: 0;
         margin-left: 30px;
     }
     & > div > div {
-        width: 85px;
+        min-width: 83px;
     }
 `;
 const Flex = style.div `

@@ -41,6 +41,10 @@ const Contents = style.div`
     line-height: 27px;
     width: 330px;
 `;
+const FifthContents = style(Contents) `
+    font-size: 18px;
+    width: 270px;
+`;
 const Img = style.div`
     width: 181px;
     height: 181px;
@@ -64,6 +68,9 @@ const FirstImg = style(Flex)`
     margin-top: 0px;
     padding-top: 100px;
 `;
+const FifthImg = style(Flex)`
+    margin-left: 100px;
+`
 const Right = style(Flex)`
     margin-left: 370px;
 `;
@@ -149,26 +156,26 @@ const AboutEntry = () => {
               <Contents>
                 v3 시스템의 성능 한계를 극복하기 위해 비동기 프로그래밍을
                 적용하였고, 실시간 시스템 모니터링 및 배포 파이프라인 구성으로
-                구성원의 작업 환경을 개선했습니다
+                구성원의 작업 환경을 개선했습니다.
               </Contents>
             </div>
           </Right>
           <Next>▼</Next>
-          <Flex>
-            <div align="right">
+          <FifthImg>
+            <div align="right" style={{marginTop: '15px'}}>
               <Year>2020</Year>
-              <Title>새로운 시작</Title>
-              <Contents>
-                오랜 기간 서비스를 개발 • 운영해온 경험을 살려 올해도 안정적으로
-                입학전형시스템을 제공하기 위해 준비중입니다.
-              </Contents>
+              <Title>다섯 번째 이야기</Title>
+              <FifthContents>
+                오랜 기간 서비스를 개발 • 운영해온 경험을 살려
+                올해도 안정적으로 입학 전형 시스템을 제공합니다.
+              </FifthContents>
             </div>
             <div>
               <Img>
                 <img src={img2020} width="165" height="165" alt="img" />
               </Img>
             </div>
-          </Flex>
+          </FifthImg>
         </Center>
       </Background>
     </div>
