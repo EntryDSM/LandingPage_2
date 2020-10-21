@@ -12,7 +12,7 @@ const Question = style.div `
     padding-left: 60px;
     margin: 0 auto;
     margin-top: 70px;
-    cursor: default;
+    cursor: pointer;
 `;
 const More = style.p `
     font-size: 25px;
