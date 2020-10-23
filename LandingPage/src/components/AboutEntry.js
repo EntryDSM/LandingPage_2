@@ -1,6 +1,6 @@
 import React from "react";
 import style from "styled-components";
-import { img2016, img2017, img2018, img2019, img2020 } from "../img"
+import { img2016, img2017, img2018, img2019, img2020 } from "../img";
 
 const About = style.div`
     font-size: 45px;
